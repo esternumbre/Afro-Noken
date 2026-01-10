@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afro Noken - Natural Hair Care</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="style.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/dist/aos.css" rel="style.css">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/script.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Durasi animasi (1 detik)
+    once: true,     // Animasi hanya berjalan sekali saat di-scroll
+  });
+</script>
+<script src="js/script.js"></script>
+
+</head>
+<body class="bg-stone-100 text-white">
+
+    <header class="header-bg relative h-[450px] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+    <div class="relative z-10" data-aos="zoom-in">
+        <div class="mb-6 inline-block">
+            <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-yellow-600 overflow-hidden shadow-2xl mx-auto">
+                <img src="assets/logo.png" alt="Logo Afro Noken" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <h1 class="font-serif text-5xl md:text-8xl italic text-yellow-600 tracking-[0.2em] uppercase drop-shadow-lg">
+            Afro Noken
+        </h1>
+        
+        <nav class="mt-10 flex flex-wrap justify-center gap-6 md:gap-10 text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-white/90">
+            <a href="#" class="nav-item-header">Beranda</a>
+            <a href="#katalog" class="nav-item-header">Katalog Produk</a>
+            <a href="#tentang" class="nav-item-header">Tentang Kami</a>
+        </nav>
+    </div>
+</header>
+
+    <section id="katalog" class="section-katalog-wood py-20 px-6 md:px-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-bark z-0 opacity-95"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+        <h2 class="text-right font-serif text-4xl mb-12 text-yellow-600 drop-shadow-md" data-aos="fade-left">
+            Katalog Produk
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="100">
+                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
+                    <img src="assets/produk1.jpg" alt="Mikel Serum" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">MIKEL SERUM</h3>
+                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Nutrisi murni untuk kekuatan akar rambut keriting."</p>
+                <button onclick="sendWA('Mikel Serum', '40.000')" class="btn-price-wood">RP. 40.000</button>
+            </div>
+
+            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="300">
+                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
+                    <img src="assets/produk2.jpg" alt="Kemira Glow" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">KEMIRA GLOW</h3>
+                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kemilau alami dengan sentuhan rempah tradisional."</p>
+                <button onclick="sendWA('Kemira Glow', '45.000')" class="btn-price-wood">RP. 45.000</button>
+            </div>
+
+            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="500">
+                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
+                    <img src="assets/produk3.jpg" alt="Alvocado Glow" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">ROSEVERA GLOW/h3>
+                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kelembutan extra dari ekstrak alpukat pilihan."</p>
+                <button onclick="sendWA('Alvocado Glow', '45.000')" class="btn-price-wood">RP. 45.000</button>
+            </div>
+            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="500">
+                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
+                    <img src="assets/produk3.jpg" alt="Alvocado Glow" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">ALVOCADO GLOW</h3>
+                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kelembutan extra dari ekstrak alpukat pilihan."</p>
+                <button onclick="sendWA('Alvocado Glow', '50.000')" class="btn-price-wood">RP. 50.000</button>
+            </div>
+            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="500">
+                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
+                    <img src="assets/produk5.png" alt="Alvocado Glow" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">SISIR BAMBU</h3>
+                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kelembutan extra dari ekstrak alpukat pilihan."</p>
+                <button onclick="sendWA('Alvocado Glow', '30.000')" class="btn-price-wood">RP. 30.000</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="tentang" class="py-20 px-6 md:px-20 bg-wood">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-right font-serif text-4xl mb-10 text-white" data-aos="fade-left">Tentang Kami</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="content-box" data-aos="fade-right">
+                <p>Afro Noken adalah nama brand local Produk perawatan rambut, yaitu serum minyak rambut, tradisional berbahan dasar VCO yang di moderenisasi, baik dalam penambahan bahan baku pembuatan dan juga packing produk.</p>
+                <p class="mt-4">Produk perawatan rambut tradisional yang dipercaya dapat merawat rambut keriting tetap sehat alami. Terbuat dari hasil vermentasi santan kelapa, serta rempah-rempah pilihan yang dikombinasikan dengan tumbuhan alami untuk menjaga kesehatan rambut Anda.</p>
+                <p class="mt-4 font-semibold text-yellow-600">Tersedia dalam 4 Variant produk yaitu Mikel Serum, Kemira GLOW, Rosevera GLOW, Alvocado GLOW.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="space-y-4">
+                    <img src="assets/documentasi/doc1.png" alt="Dokumentasi 1" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
+                    <img src="assets/documentasi/doc3.png" alt="Dokumentasi 2" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
+                </div>
+                <div class="pt-8 space-y-4">
+                    <img src="assets/documentasi/doc4.png" alt="Dokumentasi 4" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
+                    <img src="assets/documentasi/doc2.png" alt="Dokumentasi 3" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="py-16 bg-[#1a0f08] text-center border-t border-yellow-900/20">
+        <h3 class="text-yellow-600 font-bold mb-8 tracking-[0.2em] text-sm">KONTAK KAMI :</h3>
+        <div class="flex justify-center space-x-10 mb-10">
+            <a href="#" class="social-icon text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon text-blue-600"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon text-green-500"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div className="h-[1px] w-1/4 bg-yellow-900/20 mx-auto mb-8"></div>
+          <p className="text-[10px] text-stone-600 uppercase tracking-[0.5em]">Copyright &copy; 2025 Afro Noken &bull; Papua</p>
+    </footer>
+
+</body>
+</html>
