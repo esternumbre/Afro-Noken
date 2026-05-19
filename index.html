@@ -1,139 +1,347 @@
-<!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+﻿<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afro Noken - Natural Hair Care</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="style.css">
-    
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/dist/aos.css" rel="style.css">
-
-<script src="https://unpkg.com/aos@2.3.1/dist/script.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // Durasi animasi (1 detik)
-    once: true,     // Animasi hanya berjalan sekali saat di-scroll
-  });
-</script>
-<script src="js/script.js"></script>
-
 </head>
-<body class="bg-stone-100 text-white">
-
-    <header class="header-bg relative h-[450px] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
-    <div class="absolute inset-0 bg-black/40 z-0"></div>
-
-    <div class="relative z-10" data-aos="zoom-in">
-        <div class="mb-6 inline-block">
-            <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-yellow-600 overflow-hidden shadow-2xl mx-auto">
-                <img src="assets/logo.png" alt="Logo Afro Noken" class="w-full h-full object-cover">
-            </div>
-        </div>
-
-        <h1 class="font-serif text-5xl md:text-8xl italic text-yellow-600 tracking-[0.2em] uppercase drop-shadow-lg">
-            Afro Noken
-        </h1>
-        
-        <nav class="mt-10 flex flex-wrap justify-center gap-6 md:gap-10 text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-white/90">
-            <a href="#" class="nav-item-header">Beranda</a>
-            <a href="#katalog" class="nav-item-header">Katalog Produk</a>
-            <a href="#tentang" class="nav-item-header">Tentang Kami</a>
-        </nav>
-    </div>
-</header>
-
-    <section id="katalog" class="section-katalog-wood py-20 px-6 md:px-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-bark z-0 opacity-95"></div>
-
-    <div class="max-w-6xl mx-auto relative z-10">
-        <h2 class="text-right font-serif text-4xl mb-12 text-yellow-600 drop-shadow-md" data-aos="fade-left">
-            Katalog Produk
-        </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="100">
-                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
-                    <img src="assets/produk1.jpg" alt="Mikel Serum" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">MIKEL SERUM</h3>
-                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Nutrisi murni untuk kekuatan akar rambut keriting."</p>
-                <button onclick="sendWA('Mikel Serum', '40.000')" class="btn-price-wood">RP. 40.000</button>
-            </div>
-
-            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="300">
-                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
-                    <img src="assets/produk2.jpg" alt="Kemira Glow" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">KEMIRA GLOW</h3>
-                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kemilau alami dengan sentuhan rempah tradisional."</p>
-                <button onclick="sendWA('Kemira Glow', '45.000')" class="btn-price-wood">RP. 45.000</button>
-            </div>
-
-            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="500">
-                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
-                    <img src="assets/produk3.jpg" alt="Alvocado Glow" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">ROSEVERA GLOW/h3>
-                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kelembutan extra dari ekstrak alpukat pilihan."</p>
-                <button onclick="sendWA('Alvocado Glow', '45.000')" class="btn-price-wood">RP. 45.000</button>
-            </div>
-            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="500">
-                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
-                    <img src="assets/produk3.jpg" alt="Alvocado Glow" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">ALVOCADO GLOW</h3>
-                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kelembutan extra dari ekstrak alpukat pilihan."</p>
-                <button onclick="sendWA('Alvocado Glow', '50.000')" class="btn-price-wood">RP. 50.000</button>
-            </div>
-            <div class="product-card-wood" data-aos="fade-up" data-aos-delay="500">
-                <div class="overflow-hidden rounded-lg mb-4 h-72 border border-yellow-900/20">
-                    <img src="assets/produk5.png" alt="Alvocado Glow" class="w-full h-full object-cover">
-                </div>
-                <h3 class="font-bold text-xl text-yellow-500 italic tracking-wide">SISIR BAMBU</h3>
-                <p class="text-xs my-4 text-stone-300 leading-relaxed italic">"Kelembutan extra dari ekstrak alpukat pilihan."</p>
-                <button onclick="sendWA('Alvocado Glow', '30.000')" class="btn-price-wood">RP. 30.000</button>
-            </div>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-card">
+            <img src="assets/logo.png" alt="Logo Afro Noken" class="loading-logo">
+            <div class="loading-bar"></div>
         </div>
     </div>
-</section>
-    <section id="tentang" class="py-20 px-6 md:px-20 bg-wood">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-right font-serif text-4xl mb-10 text-white" data-aos="fade-left">Tentang Kami</h2>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="content-box" data-aos="fade-right">
-                <p>Afro Noken adalah nama brand local Produk perawatan rambut, yaitu serum minyak rambut, tradisional berbahan dasar VCO yang di moderenisasi, baik dalam penambahan bahan baku pembuatan dan juga packing produk.</p>
-                <p class="mt-4">Produk perawatan rambut tradisional yang dipercaya dapat merawat rambut keriting tetap sehat alami. Terbuat dari hasil vermentasi santan kelapa, serta rempah-rempah pilihan yang dikombinasikan dengan tumbuhan alami untuk menjaga kesehatan rambut Anda.</p>
-                <p class="mt-4 font-semibold text-yellow-600">Tersedia dalam 4 Variant produk yaitu Mikel Serum, Kemira GLOW, Rosevera GLOW, Alvocado GLOW.</p>
+
+    <!-- Navbar -->
+    <header class="site-header">
+        <div class="navbar container">
+            <a href="#home" class="brand">
+                <img src="assets/logo.png" alt="Logo Afro Noken" class="brand-logo">
+                <span>Afro Noken</span>
+            </a>
+            <button class="nav-toggle" aria-label="Buka menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#katalog" class="nav-link">Katalog Produk</a>
+                <a href="#tentang" class="nav-link">Tentang Kami</a>
+            </nav>
+        </div>
+
+        <!-- Hero dan Slider -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="hero-label">Natural Hair Care Papua</span>
+                <h1>Natural Hair Care Papua</h1>
+                <p>Rawat rambut naturalmu dengan bahan alami pilihan khas Papua.</p>
+                <div class="hero-actions">
+                    <a href="#katalog" class="btn btn-primary">Lihat Produk</a>
+                    <a href="#tentang" class="btn btn-secondary">Tentang Kami</a>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="space-y-4">
-                    <img src="assets/documentasi/doc1.png" alt="Dokumentasi 1" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
-                    <img src="assets/documentasi/doc3.png" alt="Dokumentasi 2" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
+            <div class="slider" aria-label="Slider produk">
+                <div class="slides">
+                    <div class="slide active" style="background-image:url('assets/produk1.jpg');" aria-hidden="false"></div>
+                    <div class="slide" style="background-image:url('assets/produk2.jpg');" aria-hidden="true"></div>
+                    <div class="slide" style="background-image:url('assets/produk3.jpg');" aria-hidden="true"></div>
                 </div>
-                <div class="pt-8 space-y-4">
-                    <img src="assets/documentasi/doc4.png" alt="Dokumentasi 4" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
-                    <img src="assets/documentasi/doc2.png" alt="Dokumentasi 3" class="rounded-lg shadow-lg border-2 border-yellow-900/20 hover:scale-105 transition duration-500">
+                <button class="slider-button prev" aria-label="Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-button next" aria-label="Selanjutnya"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Section Card Utama -->
+        <section class="section cards-section fade-section">
+            <div class="container">
+                <h2 class="section-title">Jelajahi Afro Noken</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Beranda</h3>
+                        <p>Afro Noken hadir untuk merawat rambut natural dengan bahan tradisional khas Papua dan sentuhan modern.</p>
+                        <a href="#home" class="card-link">Eksplor</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fas fa-oil-can"></i></div>
+                        <h3>Katalog Produk</h3>
+                        <p>Temukan rangkaian hair oil premium, serum, dan perawatan natural yang dibuat khusus untuk rambut keriting.</p>
+                        <a href="#katalog" class="card-link">Lihat Produk</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Tentang Kami</h3>
+                        <p>Cerita Afro Noken berakar dari budaya Papua untuk mendukung rambut keriting alami tetap sehat dan indah.</p>
+                        <a href="#tentang" class="card-link">Pelajari</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-    <footer class="py-16 bg-[#1a0f08] text-center border-t border-yellow-900/20">
-        <h3 class="text-yellow-600 font-bold mb-8 tracking-[0.2em] text-sm">KONTAK KAMI :</h3>
-        <div class="flex justify-center space-x-10 mb-10">
-            <a href="#" class="social-icon text-pink-600"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon text-blue-600"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon text-green-500"><i class="fab fa-whatsapp"></i></a>
+        <!-- Section Katalog Produk -->
+        <section id="katalog" class="section katalog-section fade-section">
+            <div class="container">
+                <!-- Katalog header: heading di atas, kategori buttons di bawah -->
+                <div class="katalog-header">
+                    <div class="katalog-top">
+                        <span class="katalog-eyebrow">Produk Pilihan</span>
+                        <h2 class="katalog-title">Katalog Produk</h2>
+                    </div>
+                    <!-- Category indicator label & buttons below heading -->
+                    <p class="category-label">Kategori Produk</p>
+                    <div class="category-filters" role="tablist" aria-label="Kategori Produk">
+                        <button class="cat-btn active" data-category="semua" role="tab" aria-selected="true">Semua</button>
+                        <button class="cat-btn" data-category="hair-care" role="tab" aria-selected="false">Hair Care</button>
+                        <button class="cat-btn" data-category="aksesoris" role="tab" aria-selected="false">Aksesoris</button>
+                        <button class="cat-btn" data-category="lainnya" role="tab" aria-selected="false">Lainnya</button>
+                    </div>
+                </div>
+                <div class="product-grid modern-products">
+                    <!-- Product Card: Mikel Hair Oil Serum -->
+                    <article class="product-card modern" data-category="hair-care">
+                        <div class="pc-image">
+                            <img src="assets/produk1.jpg" alt="Mikel Hair Oil Serum">
+                        </div>
+                        <div class="pc-body">
+                            <h3 class="pc-title">Mikel Hair Oil Serum</h3>
+                            <div class="pc-meta">
+                                <span class="pc-category">Kategori: Hair Care</span>
+                                <span class="pc-price">Rp 50.000</span>
+                            </div>
+                            <p class="pc-desc">Hair oil alami berbahan kemiri dan aloe vera untuk membantu melembapkan rambut keriting, mengurangi rambut kering, dan menjaga kilau alami rambut.</p>
+                            <div class="pc-bottom">
+                                <div class="pc-rating" aria-label="Rating 4.5 dari 5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <button class="btn btn-primary buy-now" onclick="openOrderModal('Mikel Hair Oil Serum','Rp 50.000')">
+                                    <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card: Kemira Glow -->
+                    <article class="product-card modern" data-category="hair-care">
+                        <div class="pc-image">
+                            <img src="assets/produk2.jpg" alt="Kemira Glow">
+                        </div>
+                        <div class="pc-body">
+                            <h3 class="pc-title">Kemira Glow</h3>
+                            <div class="pc-meta">
+                                <span class="pc-category">Kategori: Hair Care</span>
+                                <span class="pc-price">Rp 50.000</span>
+                            </div>
+                            <p class="pc-desc">Hair oil dengan aroma rempah Papua untuk rambut lembut dan berkilau.</p>
+
+                            <div class="pc-bottom">
+                                <div class="pc-rating" aria-label="Rating 4.0 dari 5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <button class="btn btn-primary buy-now" onclick="openOrderModal('Kemira Glow','Rp 50.000')">
+                                    <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card: Rosevera Glow -->
+                    <article class="product-card modern" data-category="hair-care">
+                        <div class="pc-image">
+                            <img src="assets/produk3.jpg" alt="Rosevera Glow">
+                        </div>
+                        <div class="pc-body">
+                            <h3 class="pc-title">Rosevera Glow</h3>
+                            <div class="pc-meta">
+                                <span class="pc-category">Kategori: Hair Care</span>
+                                <span class="pc-price">Rp 50.000</span>
+                            </div>
+                            <p class="pc-desc">Perawatan intensif untuk rambut keriting yang lembap dan bertenaga.</p>
+
+                            <div class="pc-bottom">
+                                <div class="pc-rating" aria-label="Rating 4.7 dari 5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <button class="btn btn-primary buy-now" onclick="openOrderModal('Rosevera Glow','Rp 50.000')">
+                                    <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Product Card: Sisir Bambu -->
+                    <article class="product-card modern" data-category="aksesoris">
+                        <div class="pc-image">
+                            <img src="assets/produk5.png" alt="Sisir Bambu">
+                        </div>
+                        <div class="pc-body">
+                            <h3 class="pc-title">Sisir Bambu</h3>
+                            <div class="pc-meta">
+                                <span class="pc-category">Kategori: Aksesoris</span>
+                                <span class="pc-price">Rp 30.000</span>
+                            </div>
+                            <p class="pc-desc">Sisir bambu natural untuk merapikan rambut keriting dengan lembut dan mengurangi kerontokan.</p>
+
+                            <div class="pc-bottom">
+                                <div class="pc-rating" aria-label="Rating 4.7 dari 5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <button class="btn btn-primary buy-now" onclick="openOrderModal('Sisir Bambu','Rp 30.000')">
+                                    <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Tentang Kami (Storytelling + Dokumentasi Slider) -->
+        <section id="tentang" class="section about-section fade-section">
+            <div class="container about-story">
+                <!-- Judul kecil dan heading besar -->
+                <small class="eyebrow">Tentang Afro Noken</small>
+                <h2>Cerita Brand dan Budaya Papua</h2>
+
+                <!-- Paragraf penjelasan brand diletakkan di atas sesuai instruksi -->
+                <p class="about-lead">Afro Noken lahir dari semangat merawat rambut keriting secara natural. Kami menggabungkan bahan-bahan pilihan dari alam Papua dengan teknik tradisional, sehingga menghadirkan produk perawatan rambut keriting alami, sehat, dan berakar pada budaya lokal. Fokus kami adalah menjaga tekstur alami rambut keriting sambil memberikan nutrisi mendalam tanpa bahan kimia.</p>
+
+                <!-- Slider dokumentasi (horizontal swiper) -->
+                <div class="doc-slider" aria-label="Dokumentasi Afro Noken">
+                    <!-- Prev button -->
+                    <button class="doc-btn prev" aria-label="Sebelumnya">‹</button>
+
+                    <!-- Viewport berisi track yang dapat di-swipe -->
+                    <div class="doc-viewport">
+                        <div class="doc-track">
+                            <!-- Slide 1 -->
+                            <figure class="doc-card">
+                                <img src="assets/documentasi/doc1.png" alt="Perjalanan awal Afro Noken">
+                                <figcaption>Perjalanan awal Afro Noken dalam memperkenalkan perawatan rambut natural khas Papua.</figcaption>
+                            </figure>
+
+                            <!-- Slide 2 -->
+                            <figure class="doc-card">
+                                <img src="assets/documentasi/doc3.png" alt="Proses pengemasan">
+                                <figcaption>Proses pengemasan Hair Oil Serum sebelum dikirim ke pelanggan.</figcaption>
+                            </figure>
+
+                            <!-- Slide 3 -->
+                            <figure class="doc-card">
+                                <img src="assets/documentasi/doc4.png" alt="Bahan pilihan">
+                                <figcaption>Produk natural berbahan pilihan untuk menjaga kelembapan rambut keriting.</figcaption>
+                            </figure>
+
+                            <!-- Slide 4 -->
+                            <figure class="doc-card">
+                                <img src="assets/documentasi/doc2.png" alt="Dukungan budaya Papua">
+                                <figcaption>Dukungan budaya Papua dalam membangun identitas brand Afro Noken.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Next button -->
+                    <button class="doc-btn next" aria-label="Selanjutnya">›</button>
+
+                    <!-- Pagination dots akan dibangun oleh JS -->
+                    <div class="doc-dots" role="tablist" aria-label="Pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Brand section: logo sejajar dengan nama brand dan alamat -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Logo Afro Noken" class="footer-logo">
+                    <div class="footer-brand-copy">
+                        <p class="footer-brand-title">Afro Noken • Natural Hair Care Papua</p>
+                        <p class="footer-brand-sub">Kota Jayapura, Papua</p>
+                    </div>
+                </div>
+                <!-- Social media icons under brand text -->
+                <div class="footer-social" aria-label="Sosial media Afro Noken">
+                    <a href="https://wa.me/6281247797865" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright text positioned below all footer content -->
+            <div class="footer-copy">
+                <p>&copy; 2026 Afro Noken. Semua hak cipta dilindungi.</p>
+            </div>
         </div>
-        <div className="h-[1px] w-1/4 bg-yellow-900/20 mx-auto mb-8"></div>
-          <p className="text-[10px] text-stone-600 uppercase tracking-[0.5em]">Copyright &copy; 2025 Afro Noken &bull; Papua</p>
     </footer>
 
+    <!-- Modal Order (hidden by default) -->
+    <div id="order-modal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="order-title">
+            <button class="modal-close" aria-label="Tutup" onclick="closeOrderModal()">&times;</button>
+            <h3 id="order-title">Form Pemesanan</h3>
+            <p class="modal-sub">Isi data pesanan, lalu kirim via WhatsApp.</p>
+            <form id="order-form">
+                <label>Produk
+                    <input type="text" id="order-product" name="product" readonly>
+                </label>
+                <label>Nama Lengkap *
+                    <input type="text" id="order-name" name="name" required>
+                </label>
+                <label>Keluhan / Kondisi Rambut *
+                    <textarea id="order-complaint" name="complaint" rows="3" required></textarea>
+                </label>
+                <label>Jumlah Order *
+                    <input type="number" id="order-qty" name="qty" min="1" value="1" required>
+                </label>
+                <label>Alamat Lengkap *
+                    <textarea id="order-address" name="address" rows="2" required></textarea>
+                </label>
+                <label>Nomor WhatsApp *
+                    <input type="tel" id="order-phone" name="phone" placeholder="62812..." required>
+                </label>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeOrderModal()">Close</button>
+                    <button type="submit" class="btn btn-primary" id="send-order-btn">Kirim Pesanan</button>
+                </div>
+            </form>
+            <small class="modal-note">No. WhatsApp tujuan: <span id="wa-number">081247797865</span> (ganti pada script.js)</small>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
